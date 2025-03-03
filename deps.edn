@@ -7,7 +7,7 @@
                    :main-opts ["-m" "nrepl.cmdline"]}
            ;; - see https://nrepl.org/
            ;; - start a CIDER-enhanced nREPL server on a random available port:
-           :cider-nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "RELEASE"}}
-                         :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
+           :cider {:extra-deps {cider/cider-nrepl {:mvn/version "RELEASE"}}
+                   :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
            }
 }
